@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <title>Sentencias cíclicas</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+      </head>
+</head>
+
+<body>
+	<ol><a href="index.html">Inicio</a></ol>
+	<script>
+		/*
+		FOR SE USA CUANDO SABEMOS CUÁNTAS VECES SE REPETIRÁ UNA CONDICIÓN
+		SINTAXIS
+		for( <sentencia_1>;<sentencia_2>; <sentenciw_3>; ){
+				//Codigo que se repite
+		}
+			
+		-sentencia_1: valor inicial
+		-sentencia_2: condición
+		-sentencia_3: incremento
+		*/
+		
+		var i;
+		
+		for (i=1; i<=5; i++){
+			alert("i= "+i);
+		}
+		
+		//VARIANTES
+		//1. SI OMITIMOS EL VALOR INICIAL LA VARIABLE SE INICIALIZA AL DECLARARLA
+		
+		var j;
+		for (; j<=5; j++){ 
+			alert("j= "+j);
+		}
+		
+		//2. SI OMITIMOS LA CONDICIÓN SE AGREGA UN IF CON EL LÍMITE Y UN BREAK
+		var k;
+		for (k=1; ; k++){ 
+			alert("k= "+k);
+			if(k==5){
+				break;
+			}
+		}
+				
+		//3. SI OMITIMOS EL INCREMENTO SE ESTABLECE AL FINAL
+		var l;
+		for (l=1; l<=5;){ 
+			alert("l= "+l);
+			l++;
+		}
+		
+		//4. PODEMOS TRABAJAR CON DOS VARIABLES O MÁS DENTRO DEL FOR
+		var m, o;
+		for (m=1; o=10; m<=5,o>=1; m++, o++){ 
+			alert("m= "+m+", o= "+o);
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NÚMEROS PARES</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ol><a href="index.html">Inicio</a></ol>
+	<script>
+			/*
+			EJERCICIO I: NÚMEROS PARES DEL 1 AL 100, CUÁNTOS SON Y SU SUMA
+			PARA ESTE EJERCICIO USARÉ UN FOR PORQUE SÉ HASTA CUÁNTAS VECES NECESITO REPETIR EL CÓDIGO, Y UN IF PARA VALIDAR QUE SEA PAR
+			*/
+		
+		//DECLARO LAS VARIABLES
+		var i, suma=0;
+		//HAGO EL BUCLE
+		for (i=1; i<=99; i++){ 
+			if	(i%2==0){
+				suma = i+suma;
+				alert("El número par es: "+i+"\nLa suma es: "+suma);
+				}
+			}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOPPING</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ol><a href="index.html">Inicio</a></ol>
+	<script>
+		/*
+			EJERCICIO III: EL USUARIO INDICA EL TOPPING Y SE LE INDICA EL PRECIO DEL HELADO
+			
+			PARA ESTE OTRO EJERCICIO USARÉ UN SWITCH PORQUE TAMBIÉN ESTÁ DANDO CASOS POSIBLES
+		*/
+		
+		//PIDO LOS DATOS Y LOS CONVIERTO A NÚMERO
+		topp= parseInt(prompt("Ingrese cuál topping quiere:\n1.Sin topping\n2.Oreo\n3.Kitkat\n4.Cajeta\n5.Choconuez"));
+		//DECLARO LA VARIABLE DONDE LE DIRÉ AL USUARIO CUÁNTO PAGARÁ
+		var total;
+		//HAGO EL SWITCH CON LAS OPERACIONES Y MENSAJES
+		switch(topp){
+			case 1:
+				alert("Su helado sin topping cuesta $20.00");
+			break;
+			case 2:
+				total=20+10
+				alert("Su helado con Oreo cuesta $10.00 extra\nTotal: $"+total);
+			break;
+			case 3:
+				total=20+15
+				alert("Su helado con Kitkat cuesta $15.00 extra\nTotal: $"+total);
+			break;
+			case 4:
+				total=20+10
+				alert("Su helado con Canjeta cuesta $10.00 extra\nTotal: $"+total);
+			break;
+			case 5:
+				total=20+20
+				alert("Su helado con Choconuez cuesta $20.00 extra\nTotal: $"+total);
+			break;
+			//AGREGO UN DEFAULT PARA UN DATO ERRÓNEO O INEXISTENTE
+			default:
+				alert("Número no válido.");
+			break;
+		}
+		
+	</script>
+</body>
+
+</html>

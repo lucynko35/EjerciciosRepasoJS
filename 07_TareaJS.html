@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SUELDO TRABAJADOR</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ol><a href="index.html">Inicio</a></ol>
+	<script>
+		/*
+		EJERCICIO II: PREGUNTAR AL TRABAJADOR SU SUELDO Y MOSTRAR SU AUMENTO
+		
+		PARA ESTE EJERCICIO USARÉ UN SWITCH PORQUE SON CUATRO CASOS POSIBLES.
+		*/
+		
+		//PIDO LOS DATOS Y LOS CONVIERTO A VALOR NUMÉRICO CON PARSEINT
+		cat =parseInt(prompt("Ingrese su categoría del 1 al 4: "));
+		sueldo = parseInt(prompt("Ingrese su sueldo: "));
+		//CREO LA VARIABLE Y EL SWITCH
+		var sueldoN;
+		switch(cat){
+			case 1:
+				sueldoN=(sueldo*.15)+sueldo
+				alert("Su categoría es: "+cat+"\nSu nuevo sueldo es: "+sueldoN);
+			break;
+			case 2:
+				sueldoN=(sueldo*.10)+sueldo
+				alert("Su categoría es: "+cat+"\nSu nuevo sueldo es: "+sueldoN);
+			break;
+			case 3:
+				sueldoN=(sueldo*.08)+sueldo
+				alert("Su categoría es: "+cat+"\nSu nuevo sueldo es: "+sueldoN);
+			break;
+			case 4:
+				sueldoN=(sueldo*.07)+sueldo
+				alert("Su categoría es: "+cat+"\nSu nuevo sueldo es: "+sueldoN);
+			break;
+			default:
+				alert("Categoría o dato no válido.");
+			break;
+				
+		}
+	</script>
+</body>
+
+</html>

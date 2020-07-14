@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Sentencias condicionales</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ol><a href="index.html">Inicio</a></ol>
+	<script> 
+		/* SWITCH
+		-se utiliza para hacer diferentes acciones basadas en diferentes valores
+		de la condición (variable)
+		-la condición se evalúa solo una vez
+		-si hay alguna coincidencia con algún valor se ejecuta el bloque de código correspondiente
+		-break: sale del bloque de código
+		-default: se ejecuta en caso de que la expresión no coincida con ningún valor (case)
+		
+		SINTAXIS
+		switch(<expresión>){
+			case valor_1:
+				//instrucciones para valor_1
+				break;
+			case valor_2:
+				//instrucciones para valor_2
+				break;
+		}
+		*/
+		calificacion= parseInt(prompt("Ingresa una cal:"));
+		
+		switch(calificacion){
+			case 0:
+			case 1:
+			case 2:
+			case 3:
+			case 4:
+			case 5:
+			case 7:
+				alert ("No Acredita");
+			break;
+			case 8:
+				alert ("Suficiente");
+			break;
+			case 9:
+				alert ("Destacado");
+			break;
+			case 10:
+				alert ("Autonomo");
+			break;
+			default:
+				alert ("Se ingresó una calificación no válida");
+			break;
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VIAJE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<ol><a href="index.html">Inicio</a></ol>
+	<script>
+		/* 
+			EJERCICIO V: PREGUNTAR AL USUARIO SI DESEA VIAJAR DE SER ASÍ PREGUNTAR POR 		EL MES DE VIAJE, MOSTRAR EL DESTINO Y PRECIOS. 
+					EN CASO CONTRARIO NO HACER NADA. 
+					REPETIR HASTA QUE EL USUARIO INDIQUE NO.
+					
+			PARA ESTE ÚLTIMO EJERCICIO TAMBIÉN USARÉ UN DO-WHILE, UN IF Y UN SWITCH
+		*/
+	
+		var respuesta;
+	do {
+		viaje=prompt("¿Desea realizar un viaje? Si/No");
+	
+		if(viaje==="Si"){
+			var mes;
+			mes =prompt("¿En qué mes?");
+		} switch (mes){
+			 case 'Enero':
+			 case 'Febrero':
+			 case 'Marzo':
+			 case 'Abril':
+			 case 'Mayo':
+			 case 'Junio':
+			 case 'Agosto':
+			 	alert("Los destinos y precios son: \nCancún $10,000.00 \nDisneylandia $20,000.00\nIxtapa $8,000\nLas Vegas $18,000.00");
+			break;
+			case 'Julio':
+			case 'Septiembre':
+			case 'Octubre':
+			case 'Noviembre':
+			case 'Diciembre':
+				alert("Los destinos y precios son: \nCancún $7,000.00\nDisneylandia $12,000.00\nIxtapa $5,000.00\nLas Vegas $12,000.00");
+			break;
+			
+		} 
+		respuesta=prompt("¿Desea ver más información? Si/No");
+	}	while(respuesta==="Si");
+			
+	</script>
+</body>
+
+</html>
